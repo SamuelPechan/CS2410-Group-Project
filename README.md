@@ -16,3 +16,7 @@ The final analysis dataset is `data/processed/daily_crimes_weather.csv`. It has 
 2. Run `group-project.ipynb` with the working directory set to the project root. It regenerates the cleaned 2025 crime data and the final joined dataset.
 
 The notebooks and source data are included so the processed output can be reproduced. The older `data/original/weather.csv` can be omitted from a GitHub push if you do not need to retain that unused source.
+
+## Exploratory analysis
+
+Run `python notebooks/exploratory_analysis.py` from the project root after creating the processed datasets. The script calculates descriptive statistics, weather/crime correlations, rainy-versus-dry comparisons, monthly and weekday averages, and data-quality checks. It saves tables in `results/` and charts in `figures/`.

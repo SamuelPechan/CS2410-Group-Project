@@ -1,0 +1,5 @@
+,Assault Count,Assault Count,Battery Count,Battery Count,Total Incidents,Total Incidents
+,count,mean,count,mean,count,mean
+Rainy,,,,,,
+False,263,7.36,263,22.5,263,29.86
+True,102,7.49,102,22.63,102,30.12
