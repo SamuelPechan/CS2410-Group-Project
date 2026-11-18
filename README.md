@@ -46,7 +46,7 @@ After creating the processed datasets, run:
 python notebooks/exploratory_analysis.py
 ```
 
-The script creates summary tables in `results/` and three charts in `figures/` covering data quality, descriptive statistics, correlations, rainy/dry comparisons, monthly averages, and weekday averages.
+The script creates summary tables in `results/` and four charts in `figures/` covering data quality, descriptive statistics, correlations, rainy/dry comparisons, monthly averages, and weekday averages.
 
 ## Preliminary findings
 

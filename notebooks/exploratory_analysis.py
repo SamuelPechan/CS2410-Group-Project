@@ -144,6 +144,17 @@ def main() -> None:
     plt.savefig(FIGURES_DIR / "weekday_incident_averages.png", dpi=200)
     plt.close()
 
+    # Figure 4: rainy versus dry average total incidents.
+    rainy_plot = rainy_dry["Total Incidents"]["mean"].reindex([False, True])
+    plt.figure(figsize=(7, 5))
+    plt.bar(["Dry days", "Rainy days"], rainy_plot.values)
+    plt.xlabel("Day type")
+    plt.ylabel("Average daily incidents")
+    plt.title("Average daily incidents on rainy and dry days")
+    plt.tight_layout()
+    plt.savefig(FIGURES_DIR / "rainy_vs_dry_incidents.png", dpi=200)
+    plt.close()
+
     print(f"\nSaved summary tables to {RESULTS_DIR}")
     print(f"Saved figures to {FIGURES_DIR}")
 
